@@ -1,0 +1,21 @@
+name: geocoder
+description: Forward and reverse geocoding.
+version: 0.3.0
+homepage: https://github.com/dtrbinh/flutter_geocoder
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.dtrbinh.geocoder
+        pluginClass: GeocoderPlugin
+      ios:
+        pluginClass: GeocoderPlugin
